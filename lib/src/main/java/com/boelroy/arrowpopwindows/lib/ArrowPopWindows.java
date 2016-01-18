@@ -171,6 +171,8 @@ public class ArrowPopWindows extends PopupWindows implements OnDismissListener{
         showArrow(showView, hideView, arrowPos, direct);
         setAnimationStyle(mVisibleWidth, anchorRect.centerX(), direct);
 
+        setOnDismissListener(this);
+
         mWindow.showAtLocation(anchor, Gravity.NO_GRAVITY, xPos, yPos);
     }
 
