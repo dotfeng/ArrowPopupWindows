@@ -28,7 +28,7 @@ public class PopupWindows {
             @Override
             public boolean onTouch(View view, MotionEvent motionEvent) {
                 if(motionEvent.getAction() == MotionEvent.ACTION_OUTSIDE){
-                    mWindow.dismiss();
+                    dismiss();
                     return true;
                 }
                 return false;
